@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>PortFolio</title>
+    <style>
+        .legend{
+            display: inline;
+            position:relative;
+            top:-50px;
+            right: -80px;
+            background: #fff;
+            text-align: right;
+            padding: 5px 10px;
+            border: 5px solid #111;
+        }
+        form{
+            padding:40px 60px 40px 60px;
+            border-left:5px solid #111;
+            border-top:5px solid #111;
+            border-bottom: 5px solid transparent;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="logo">Ducati</span>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li class="active"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="bgimg-contact">
+            <div class="caption">
+                <span class="border">CONTACT US</span>
+            </div>
+            <div class="arrow-anim">
+                    <div class="arrow first"></div>
+                    <div class="arrow second"></div>
+                    <div class="arrow third"></div>
+                </div>
+        </div>
+        <div class="form flex-row" style="justify-content:space-around;min-height: 80%">
+            <div>
+                <div style="margin:50px 0;">
+                    <img src="http://humaan.com/wp-content/uploads/2014/11/google-maps-basic-marker.png" alt="" width="700"
+                        height="300">
+                </div>
+                <div class="contact-info flex-row">
+                    <div class="info"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDYxMiA2MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYxMiA2MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzM5LjI5NiwxOS41NzNjLTkyLjE4NywwLTE3My43NzgsNDYuMDIxLTIyMy4xNjUsMTE2LjI1YzEwLjIyMSw2LjY2OCwyMC4xODQsMTUuODEyLDI5LjgyLDI3LjU2NyAgIGMzNi44NDQtNTUuMDkxLDk2LjQxNy05My43NDMsMTY1LjM0NC0xMDIuMDUybDI3Ljk5Nyw0Ny4zNzdsMjcuOTk3LTQ3LjM3OGMxMDUuOTUyLDEyLjc2OSwxOTAuMTcsOTYuOTgzLDIwMi45NDUsMjAyLjkzNCAgIGwtNDcuMzg1LDI4LjAwMWw0Ny4zODYsMjguMDAyYy04LjU0LDcwLjgzNi00OS4xMDgsMTMxLjgyMS0xMDYuNjYxLDE2OC4zNzJjMy42NjYsOC4zNTcsNS43MzEsMTYuOTAyLDYuMDk2LDI1LjcxMiAgIGMwLjI2OSw2LjQzOC0wLjM5NSwxMi41MjEtMS43MywxOC4yOTZDNTUzLjYwOSw0ODYuNjIyLDYxMiwzOTYuMTUzLDYxMiwyOTIuMjc3QzYxMiwxNDEuOTA0LDQ4OS42NjksMTkuNTczLDMzOS4yOTYsMTkuNTczeiAgICBNNDA4Ljg4Nyw0NjguNjljLTYyLjg2NS01MC41MjMtODAuNDQ0LTI1LjY4OC0xMDguOTY4LDIuODMyYy0xOS45MTQsMTkuOTIxLTcwLjMwOC0yMS42NzgtMTEzLjgyMS02NS4xOTMgICBjLTQzLjUxNi00My41MjEtODUuMTA3LTkzLjkwNy02NS4xOTUtMTEzLjgyNGMyOC41MjYtMjguNTIxLDUzLjM1NC00Ni4xMSwyLjgxNy0xMDguOTU4ICAgYy01MC41Mi02Mi44NzEtODQuMTk4LTE0LjYwMy0xMTEuODI5LDEzLjAzYy0zMS45LDMxLjg4OS0xLjY4MSwxNTAuNzI2LDExNS43NjksMjY4LjE5NCAgIGMxMTcuNDY2LDExNy40NTIsMjM2LjMwMiwxNDcuNjUxLDI2OC4xODMsMTE1Ljc3NEM0MjMuNDcxLDU1Mi45MTEsNDcxLjc1Myw1MTkuMjM3LDQwOC44ODcsNDY4LjY5eiBNMjE3LjQyNiwzMzQuOTU0ICAgYzAtNTUuODgsNjUuNDItNjUuODM1LDY1LjQyLTg3LjY0MWMwLTEwLjU4MS04LjQ3LTE1LjAyMy0xNi4zMDQtMTUuMDIzYy0xNC4zOTcsMC0yMi40MzQsMTYuMDgzLTIyLjQzNCwxNi4wODNsLTI3LjUyMS0xOC40MTUgICBjMCwwLDEzLjk3My0zMi42LDUzLjM0Ni0zMi42YzI0Ljc2NiwwLDUxLjY1LDE0LjE4NSw1MS42NSw0Ni4zNmMwLDQ3LjIwOC02MC45NjgsNTYuMzE0LTYyLjAyOCw3NS43ODloNjQuMzZ2MzEuNzUxSDIxOS4xMjMgICBDMjE4LjA2MiwzNDUuMzMyLDIxNy40MjYsMzQwLjA0MywyMTcuNDI2LDMzNC45NTR6IE0zMzkuMzkxLDI5Mi4xOTlsNTguNDM0LTkyLjMwNWg0NS4zMDF2ODQuMDQ3aDE3Ljk5MXYzMC42OTFoLTE3Ljk5MXYzNi42MjggICBoLTM2LjYyOHYtMzYuNjI4aC02Ny4xMDZWMjkyLjE5OUwzMzkuMzkxLDI5Mi4xOTl6IE00MDYuNDk3LDI4My45NHYtMzMuODcxYzAtOC4yNTgsMS4yNzItMTYuOTQsMS4yNzItMTYuOTRoLTAuNDI0ICAgYzAsMC0zLjE3MSw5LjMxOC03LjQxLDE1LjY2OWwtMjIuODU3LDM0LjcydjAuNDI0TDQwNi40OTcsMjgzLjk0TDQwNi40OTcsMjgzLjk0eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+                            width="100" />
+                        <h4>+91 9898989898</h4>
+                    </div>
+                    <div class="info"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDk3LjcxMyA5Ny43MTMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDk3LjcxMyA5Ny43MTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNNDguODU1LDBDMjkuMDIxLDAsMTIuODgzLDE2LjEzOCwxMi44ODMsMzUuOTc0YzAsNS4xNzQsMS4wNTksMTAuMTE0LDMuMTQ2LDE0LjY4NCAgIGM4Ljk5NCwxOS42ODEsMjYuMjM4LDQwLjQ2LDMxLjMxLDQ2LjM1OWMwLjM4LDAuNDQxLDAuOTM0LDAuNjk1LDEuNTE3LDAuNjk1czEuMTM3LTAuMjU0LDEuNTE3LTAuNjk1ICAgYzUuMDctNS44OTgsMjIuMzE0LTI2LjY3NiwzMS4zMTEtNDYuMzU5YzIuMDg4LTQuNTcsMy4xNDYtOS41MSwzLjE0Ni0xNC42ODRDODQuODI4LDE2LjEzOCw2OC42OSwwLDQ4Ljg1NSwweiBNNDguODU1LDU0LjY1OSAgIGMtMTAuMzAzLDAtMTguNjg2LTguMzgzLTE4LjY4Ni0xOC42ODZjMC0xMC4zMDQsOC4zODMtMTguNjg3LDE4LjY4Ni0xOC42ODdzMTguNjg2LDguMzgzLDE4LjY4NiwxOC42ODcgICBDNjcuNTQyLDQ2LjI3Niw1OS4xNTksNTQuNjU5LDQ4Ljg1NSw1NC42NTl6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                            width="100" />
+                        <h4>New Delhi, India</h4>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <div style="text-align:right">
+                    <p class="legend">Book an Appointment</p>
+                </div>
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="email">E-mail</label>
+                <br>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="message">Message</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit">Email</button>
+            </form>
+        </div>
+        <footer class="flex-row" style="justify-content:space-between;align-items: flex-start; padding-top: 40px;">
+            <div class="footer-section logo-small">
+                <h3>Ducati</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Home</h3>
+                <p>Variants</p>
+                <p>Performance</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Our Team</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Book an appointment</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="footer-section">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+                    x="0px" y="0px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752   c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407   c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752   c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
+                        <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561   C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561   c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
+                        <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78   c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78   C135.661,29.421,132.821,28.251,129.921,28.251z" />
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                    x="0px" y="0px" viewBox="0 0 611.981 611.981" style="enable-background:new 0 0 611.981 611.981;"
+                    xml:space="preserve">
+                    <g>
+                        <g id="twitter">
+                            <g>
+                                <path d="M605.95,114.16c-4.909-3.356-11.387-3.245-16.144,0.319c-3.287,2.455-8.183,4.632-13.896,6.532     c18.82-23.342,19.098-38.944,18.82-42.786c-0.375-4.993-3.412-9.417-7.947-11.539c-4.549-2.136-9.875-1.664-13.952,1.276     c-25.658,18.363-51.329,22.357-66.308,22.884c-24.382-22.648-55.906-35.061-89.414-35.061     c-72.494,0-131.479,58.957-131.479,131.451c0,5.243,0.305,10.485,0.929,15.672C165.581,199.899,67.457,85.867,66.472,84.703     c-2.898-3.44-7.268-5.256-11.789-4.854c-4.48,0.402-8.488,2.94-10.763,6.824c-30.789,52.633-18.224,102.506,2.885,137.387     c-3.925-2.108-8.668-2.247-12.746-0.208c-4.632,2.302-7.614,7.004-7.697,12.191c-0.901,55.296,24.354,88.443,49.832,107.748     c-1.872,0.764-3.578,1.943-4.979,3.482c-3.314,3.633-4.466,8.75-3.01,13.453c17.711,57.127,59.318,78.539,88.513,86.557     c-33.48,23.605-74.893,29.139-106.362,29.139c-20.096,0-33.938-2.385-34.077-2.414c-6.269-1.109-12.565,2.262-15.131,8.143     c-2.552,5.879-0.749,12.744,4.383,16.6c63.146,47.475,139.397,57.447,192.253,57.447c41.773,0,70.801-6.104,72.271-6.422     c271.306-63.354,281.611-306.618,281.181-350.943c50.857-46.725,58.957-64.963,60.233-69.512     C613.065,123.605,610.846,117.517,605.95,114.16z M527.896,182.604c-3.148,2.857-4.812,6.99-4.521,11.234     c0.181,2.635,15.006,264.801-259.365,328.877c-0.264,0.055-27.6,5.756-66.239,5.756c-36.004,0-83.658-4.924-129.135-24.881     c41.635-2.664,92.687-15.438,129.412-56.059c3.675-4.078,4.577-9.918,2.344-14.938c-2.233-5.008-7.239-8.238-12.718-8.238     c-2.58,0-57.168-0.652-84.49-51.398c12.648,0.402,24.118-1.471,32.62-5.34c5.45-2.482,8.668-8.17,8.03-14.119     c-0.638-5.949-5.048-10.818-10.901-12.08c-2.954-0.637-65.795-14.951-77.126-81.231c9.847,3.759,21.83,6.366,33.425,4.66     c5.381-0.804,9.805-4.674,11.303-9.902c1.498-5.229-0.208-10.859-4.341-14.382c-2.773-2.358-62.702-54.436-36.669-122.588     c34.908,35.435,129.897,118.844,244.442,112.395c4.133-0.236,7.961-2.316,10.401-5.658c2.441-3.343,3.273-7.614,2.247-11.636     c-2.15-8.391-3.231-17.087-3.231-25.824c0-57.182,46.53-103.713,103.74-103.713c28.029,0,54.283,10.998,73.95,30.983     c2.552,2.58,6.019,4.078,9.652,4.133l2.136,0.014c10.194,0,26.171-1.234,44.492-7.143c-5.866,6.199-13.494,13.189-23.383,20.831     c-4.854,3.759-6.657,10.25-4.452,15.963c2.205,5.728,7.975,9.334,14.021,8.834c2.247-0.18,12.121-1.04,24.34-3.231     C550.183,161.801,540.378,171.273,527.896,182.604z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                    x="0px" y="0px" width="792px" height="792px" viewBox="0 0 792 792" style="enable-background:new 0 0 792 792;"
+                    xml:space="preserve">
+                    <g>
+                        <g id="facebook">
+                            <g>
+                                <path d="M614.582,0.128L494.197,0.184c0,0-2.439-0.184-6.826-0.184C462.67,0,337.754,6.863,303.768,140.809     c-0.532,1.486-11.965,35.014-12.148,112.988h-114.2c-10.129,0-18.351,8.221-18.351,18.351v105.226     c0,10.13,8.222,18.351,18.351,18.351h124.898v377.924c0,10.13,8.221,18.352,18.351,18.352H463.68     c10.129,0,18.352-8.222,18.352-18.352V396.109h125.301c10.131,0,18.352-8.221,18.352-18.351V272.148     c0-10.13-8.221-18.351-18.352-18.351H482.287v-45.163c0-30.078,19.086-62.21,72.672-62.21h59.623     c10.129,0,18.35-8.221,18.35-18.351V18.479C632.932,8.35,624.729,0.128,614.582,0.128z M596.23,109.722h-41.271     c-75.553,0-109.373,49.677-109.373,98.913v63.514c0,10.13,8.221,18.351,18.35,18.351H588.98v68.909H463.68     c-10.131,0-18.352,8.221-18.352,18.351v377.539H339.02V377.374c0-10.13-8.221-18.351-18.351-18.351H195.771v-68.523h114.346     c4.936,0,9.652-1.982,13.103-5.505s5.34-8.276,5.249-13.213c-1.633-83.461,9.836-118.604,10.387-120.384     C365.923,44.979,459.385,36.702,487.371,36.702c2.551,0,4.074,0.074,5.561,0.129H596.23V109.722L596.23,109.722z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

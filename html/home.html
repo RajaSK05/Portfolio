@@ -1,12 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
     <title>PortFolio</title>
+    <style>
+        .card {
+            width: 400px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 6px #aaa;
+            margin: 40px;
+            text-align: center;
+            background: #111;
+            color: #fff;
+        }
+
+        .card img {
+            border: none;
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            height: 80%;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <span class="logo">Ducati</span>
+        <nav>
+            <ul>
+                <li class="active"><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="bgimg-1">
+            <div class="caption showmore">
+
+                <div class="no-border">explore more</div>
+
+                <!-- <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQzOC41MzMgNDM4LjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDM4LjUzMyA0MzguNTMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQwOS4xMzMsMTA5LjIwM2MtMTkuNjA4LTMzLjU5Mi00Ni4yMDUtNjAuMTg5LTc5Ljc5OC03OS43OTZDMjk1LjczNiw5LjgwMSwyNTkuMDU4LDAsMjE5LjI3MywwICAgYy0zOS43ODEsMC03Ni40Nyw5LjgwMS0xMTAuMDYzLDI5LjQwN2MtMzMuNTk1LDE5LjYwNC02MC4xOTIsNDYuMjAxLTc5LjgsNzkuNzk2QzkuODAxLDE0Mi44LDAsMTc5LjQ4OSwwLDIxOS4yNjcgICBjMCwzOS43OCw5LjgwNCw3Ni40NjMsMjkuNDA3LDExMC4wNjJjMTkuNjA3LDMzLjU5Miw0Ni4yMDQsNjAuMTg5LDc5Ljc5OSw3OS43OThjMzMuNTk3LDE5LjYwNSw3MC4yODMsMjkuNDA3LDExMC4wNjMsMjkuNDA3ICAgczc2LjQ3LTkuODAyLDExMC4wNjUtMjkuNDA3YzMzLjU5My0xOS42MDIsNjAuMTg5LTQ2LjIwNiw3OS43OTUtNzkuNzk4YzE5LjYwMy0zMy41OTYsMjkuNDAzLTcwLjI4NCwyOS40MDMtMTEwLjA2MiAgIEM0MzguNTMzLDE3OS40ODUsNDI4LjczMiwxNDIuNzk1LDQwOS4xMzMsMTA5LjIwM3ogTTM2MS43MzMsMjA0LjcwNUwyMzIuMTE5LDMzNC4zMjRjLTMuNjE0LDMuNjE0LTcuOSw1LjQyOC0xMi44NDksNS40MjggICBjLTQuOTQ4LDAtOS4yMjktMS44MTMtMTIuODQ3LTUuNDI4TDc2LjgwNCwyMDQuNzA1Yy0zLjYxNy0zLjYxNS01LjQyNi03Ljg5OC01LjQyNi0xMi44NDVjMC00Ljk0OSwxLjgwOS05LjIzNSw1LjQyNi0xMi44NTEgICBsMjkuMTE5LTI5LjEyMWMzLjYyMS0zLjYxOCw3LjktNS40MjYsMTIuODUxLTUuNDI2YzQuOTQ4LDAsOS4yMzEsMS44MDksMTIuODQ3LDUuNDI2bDg3LjY1LDg3LjY1bDg3LjY1LTg3LjY1ICAgYzMuNjE0LTMuNjE4LDcuODk4LTUuNDI2LDEyLjg0Ny01LjQyNmM0Ljk0OSwwLDkuMjMzLDEuODA5LDEyLjg0Nyw1LjQyNmwyOS4xMjMsMjkuMTIxYzMuNjIxLDMuNjE2LDUuNDI4LDcuOTAyLDUuNDI4LDEyLjg1MSAgIEMzNjcuMTY0LDE5Ni44MDcsMzY1LjM1NywyMDEuMDksMzYxLjczMywyMDQuNzA1eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+                    style="background:#fff;border-radius: 50%;border: 1px solid transparent;" width="40" /> -->
+                <!-- <img src="https://static.wixstatic.com/media/67d230_967e1736a6cf4000819023dcf83d0d28~mv2_d_1748_2480_s_2.gif"
+                    alt="" width="100" style="border:none"> -->
+                <!-- <div class="arrow third"></div> -->
+            </div>
+            <div class="arrow-anim">
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                </div>
+        </div>
+
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;">Ducati</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, enim? Perferendis ipsam quaerat magni
+                incidunt ad ducimus quibusdam quasi quae aperiam laboriosam iusto deleniti unde voluptates modi cum
+                nobis, odit expedita aspernatur magnam, eveniet, quia laborum exercitationem laudantium dolor. Dolores
+                cum blanditiis, odit quas corporis repudiandae, mollitia pariatur, facilis nobis esse sequi vel aliquid
+                dolorem dolore. Provident, voluptatibus aliquid. Fuga atque magni quibusdam provident sunt nostrum,
+                nesciunt maiores doloribus ad repellat non possimus a at labore hic. Perferendis explicabo qui quo ea
+                ducimus, eos asperiores magnam cum quasi vitae, repellat aliquam rem enim. Dolore illum maiores, quos
+                laboriosam nulla asperiores facilis eaque assumenda nostrum doloribus iste unde minima velit excepturi
+                quod alias dicta. Facere voluptatem, similique, impedit fugit porro harum dolorum aperiam commodi
+                suscipit itaque eius nobis necessitatibus explicabo iusto laborum eligendi odio minus nam magnam
+                repellat laboriosam quibusdam ullam a. Voluptates commodi ea asperiores! Ea optio accusamus eius nobis
+                reprehenderit inventore fugit cupiditate distinctio at laudantium illum provident tempore repellendus
+                possimus obcaecati dolor blanditiis ad rerum earum, labore sint modi quia perspiciatis! Reiciendis
+                laboriosam minima non, iusto iure voluptatem deleniti nulla, quis vitae rerum id consectetur
+                dignissimos repudiandae eligendi dolore possimus sint vel maxime ea assumenda. Reiciendis quo illum
+                ullam optio asperiores sapiente, necessitatibus nostrum! Iusto quae tenetur asperiores soluta quos.
+                Saepe iste ullam repellendus atque nobis veniam vel minus delectus itaque nisi. Veniam minus dolor
+                omnis architecto id laborum soluta rem, quasi corrupti repellendus sunt sint at dolorum porro maxime
+                fuga, amet expedita aperiam facere iusto non placeat. Iure facere modi nemo nulla voluptas asperiores
+                nam fuga eius, ipsa quod sunt doloremque, nisi quia tempore corrupti consequuntur soluta laborum omnis
+                illum dolorem, placeat optio. Voluptates voluptatem ex fugiat mollitia voluptate laudantium doloribus
+                sapiente pariatur enim eligendi recusandae odio quos eum, vero numquam. Sint nostrum, numquam nesciunt
+                ex necessitatibus officia dolore, ipsam a dicta alias provident fugit sed quibusdam enim quasi fuga
+                optio voluptatem. Non saepe id quos, harum tempora, debitis tempore maxime placeat recusandae similique
+                quam autem nemo odio soluta, consequuntur ab reprehenderit iure labore blanditiis corporis ipsum. Amet
+                asperiores culpa ratione recusandae beatae odit voluptates vero, cum dolorem doloremque illo, quas,
+                architecto at voluptatum tenetur nostrum? Aliquid debitis quidem saepe qui consequuntur voluptates
+                velit est minima quaerat veniam officia non omnis iste accusantium laborum aut, explicabo perspiciatis
+                ad quam officiis reiciendis illo maiores soluta. Quasi optio rem vel inventore, consequuntur explicabo
+                culpa asperiores voluptatum aperiam beatae, consectetur reprehenderit odit quos, totam voluptate!
+                Consequuntur beatae eos sequi doloremque iste, ratione ullam rerum, quidem numquam non repellendus ab
+                commodi minus fugit harum natus adipisci, quam saepe nam. Provident ad voluptas sint culpa hic error
+                eveniet, odit optio, id commodi amet cum assumenda beatae, mollitia obcaecati deserunt in perferendis
+                iusto delectus soluta! Similique nostrum, nam distinctio repudiandae quasi nemo assumenda cum vero
+                molestias nobis officia tenetur porro a minus temporibus ipsa sint placeat aut? Saepe ea recusandae nam
+                labore corrupti fugiat atque alias odio magni vero voluptatem explicabo repudiandae deleniti,
+                necessitatibus pariatur minima perferendis aut quasi dicta. Ducimus, accusamus tempore!</p>
+        </div>
+
+        <div class="bgimg-2">
+            <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">VARIANTS</span>
+            </div>
+        </div>
+        <div class="flex-row" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <div class="card">
+                <img src="http://www.ducati.it/cms-web/fs//MediaGalleries/517/MediaGallery_517244/SBK-848evo-Corse-SE_2013_Studio_B01_1920x1080.jpg/SBK-848evo-Corse-SE_2013_Studio_B01_1920x1080.mediagallery_output_image_[1920x1080].jpg"
+                    alt="">
+                <h3>Model 1</h3>
+            </div>
+            <div class="card">
+                <img src="https://put.edidomus.it/dueruote/news/foto/436574_1938_big_02-MULTISTRADA-950-hp1.jpg" alt="">
+                <h3>Model 2</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://ic.maxabout.us//bikes/ducati/ducati-diavel-dark//Diavel-Dark_2013_Studio_4.jpg" alt="">
+                <h3>Model 3</h3>
+            </div>
+            <div class="card">
+                <img src="https://auto.ndtvimg.com/bike-images/gallery/ducati/899-panigale/exterior/left-view.jpg?v=2017-01-24"
+                    alt="">
+                <h3>Model 4</h3>
+            </div>
+            <div class="card">
+                <img src="http://3.bp.blogspot.com/-Cy-AVIJdkTg/VLonK1cQLoI/AAAAAAABTc0/7XPnheco7i8/s1600/c5a27d7feeaac3253d5c905bf8f44619.jpg"
+                    alt="">
+                <h3>Model 5</h3>
+            </div>
+
+        </div>
+        <footer class="flex-row" style="justify-content:space-between;align-items: flex-start; padding-top: 40px;">
+            <div class="footer-section logo-small">
+                <h3>Ducati</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Home</h3>
+                <p>Variants</p>
+                <p>Performance</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Our Team</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Book an appointment</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="footer-section">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+                    x="0px" y="0px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752   c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407   c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752   c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
+                        <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561   C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561   c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
+                        <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78   c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78   C135.661,29.421,132.821,28.251,129.921,28.251z" />
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                    x="0px" y="0px" viewBox="0 0 611.981 611.981" style="enable-background:new 0 0 611.981 611.981;"
+                    xml:space="preserve">
+                    <g>
+                        <g id="twitter">
+                            <g>
+                                <path d="M605.95,114.16c-4.909-3.356-11.387-3.245-16.144,0.319c-3.287,2.455-8.183,4.632-13.896,6.532     c18.82-23.342,19.098-38.944,18.82-42.786c-0.375-4.993-3.412-9.417-7.947-11.539c-4.549-2.136-9.875-1.664-13.952,1.276     c-25.658,18.363-51.329,22.357-66.308,22.884c-24.382-22.648-55.906-35.061-89.414-35.061     c-72.494,0-131.479,58.957-131.479,131.451c0,5.243,0.305,10.485,0.929,15.672C165.581,199.899,67.457,85.867,66.472,84.703     c-2.898-3.44-7.268-5.256-11.789-4.854c-4.48,0.402-8.488,2.94-10.763,6.824c-30.789,52.633-18.224,102.506,2.885,137.387     c-3.925-2.108-8.668-2.247-12.746-0.208c-4.632,2.302-7.614,7.004-7.697,12.191c-0.901,55.296,24.354,88.443,49.832,107.748     c-1.872,0.764-3.578,1.943-4.979,3.482c-3.314,3.633-4.466,8.75-3.01,13.453c17.711,57.127,59.318,78.539,88.513,86.557     c-33.48,23.605-74.893,29.139-106.362,29.139c-20.096,0-33.938-2.385-34.077-2.414c-6.269-1.109-12.565,2.262-15.131,8.143     c-2.552,5.879-0.749,12.744,4.383,16.6c63.146,47.475,139.397,57.447,192.253,57.447c41.773,0,70.801-6.104,72.271-6.422     c271.306-63.354,281.611-306.618,281.181-350.943c50.857-46.725,58.957-64.963,60.233-69.512     C613.065,123.605,610.846,117.517,605.95,114.16z M527.896,182.604c-3.148,2.857-4.812,6.99-4.521,11.234     c0.181,2.635,15.006,264.801-259.365,328.877c-0.264,0.055-27.6,5.756-66.239,5.756c-36.004,0-83.658-4.924-129.135-24.881     c41.635-2.664,92.687-15.438,129.412-56.059c3.675-4.078,4.577-9.918,2.344-14.938c-2.233-5.008-7.239-8.238-12.718-8.238     c-2.58,0-57.168-0.652-84.49-51.398c12.648,0.402,24.118-1.471,32.62-5.34c5.45-2.482,8.668-8.17,8.03-14.119     c-0.638-5.949-5.048-10.818-10.901-12.08c-2.954-0.637-65.795-14.951-77.126-81.231c9.847,3.759,21.83,6.366,33.425,4.66     c5.381-0.804,9.805-4.674,11.303-9.902c1.498-5.229-0.208-10.859-4.341-14.382c-2.773-2.358-62.702-54.436-36.669-122.588     c34.908,35.435,129.897,118.844,244.442,112.395c4.133-0.236,7.961-2.316,10.401-5.658c2.441-3.343,3.273-7.614,2.247-11.636     c-2.15-8.391-3.231-17.087-3.231-25.824c0-57.182,46.53-103.713,103.74-103.713c28.029,0,54.283,10.998,73.95,30.983     c2.552,2.58,6.019,4.078,9.652,4.133l2.136,0.014c10.194,0,26.171-1.234,44.492-7.143c-5.866,6.199-13.494,13.189-23.383,20.831     c-4.854,3.759-6.657,10.25-4.452,15.963c2.205,5.728,7.975,9.334,14.021,8.834c2.247-0.18,12.121-1.04,24.34-3.231     C550.183,161.801,540.378,171.273,527.896,182.604z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                    x="0px" y="0px" width="792px" height="792px" viewBox="0 0 792 792" style="enable-background:new 0 0 792 792;"
+                    xml:space="preserve">
+                    <g>
+                        <g id="facebook">
+                            <g>
+                                <path d="M614.582,0.128L494.197,0.184c0,0-2.439-0.184-6.826-0.184C462.67,0,337.754,6.863,303.768,140.809     c-0.532,1.486-11.965,35.014-12.148,112.988h-114.2c-10.129,0-18.351,8.221-18.351,18.351v105.226     c0,10.13,8.222,18.351,18.351,18.351h124.898v377.924c0,10.13,8.221,18.352,18.351,18.352H463.68     c10.129,0,18.352-8.222,18.352-18.352V396.109h125.301c10.131,0,18.352-8.221,18.352-18.351V272.148     c0-10.13-8.221-18.351-18.352-18.351H482.287v-45.163c0-30.078,19.086-62.21,72.672-62.21h59.623     c10.129,0,18.35-8.221,18.35-18.351V18.479C632.932,8.35,624.729,0.128,614.582,0.128z M596.23,109.722h-41.271     c-75.553,0-109.373,49.677-109.373,98.913v63.514c0,10.13,8.221,18.351,18.35,18.351H588.98v68.909H463.68     c-10.131,0-18.352,8.221-18.352,18.351v377.539H339.02V377.374c0-10.13-8.221-18.351-18.351-18.351H195.771v-68.523h114.346     c4.936,0,9.652-1.982,13.103-5.505s5.34-8.276,5.249-13.213c-1.633-83.461,9.836-118.604,10.387-120.384     C365.923,44.979,459.385,36.702,487.371,36.702c2.551,0,4.074,0.074,5.561,0.129H596.23V109.722L596.23,109.722z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
