@@ -127,7 +127,7 @@ footer{
 .main-content{
     height: 100%;
     position: relative;
-    top: 68px;
+    top: 4em;
 }
 nav,ul{
     display: inline;
